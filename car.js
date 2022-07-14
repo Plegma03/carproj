@@ -50,9 +50,7 @@ class Car{
             }
         }
         if(this.x<0 || this.x>canvas.width){
-            this.speed=this.speed/2;
-            this.x+=Math.sin(this.angle)*this.speed;
-            this.y+=Math.cos(this.angle)*this.speed;
+            this.speed=0;
         }
         this.x-=Math.sin(this.angle)*this.speed;
         this.y-=Math.cos(this.angle)*this.speed;
